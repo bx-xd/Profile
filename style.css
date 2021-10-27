@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap');
+
+body {
+  color:rgb(80, 80, 80);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color:rgb(60, 60, 60);
+  font-family:  'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.circle-img {
+  width: auto;
+  height: 75px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+
+.container {
+  padding: 40px;
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.3);
+  margin: 40px auto;
+  text-align: center;
+  width: 35%;
+  transition: 0.7s;
+}
+.container:hover {
+  border-radius: 2px;
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px,
+            rgb(31, 193, 27) 0px 0px 0px 6px,
+            rgb(255, 217, 19) 0px 0px 0px 9px,
+            rgb(255, 156, 85) 0px 0px 0px 12px,
+            rgb(255, 85, 85) 0px 0px 0px 15px;
+  transform: translate(-5px, 0px);
+  transition: 0.7s;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: rgb(156, 245, 218);
+  color: rgb(110, 105, 96);
+  padding: 10px 20px;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  transition: 0.5s;
+  transform: translate(2, 2);
+  background-color: rgb(110, 105, 96);
+  color: rgb(156, 245, 218);
+}
+
+li {
+  display: inline-flex;
+}
+
+li a {
+  color:rgb(120, 120, 120) ;
+  font-size: 40px;
+  list-style: none;
+  padding: 10px;
+}
+
+:hover {
+  color:rgb(80, 80, 80) ;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 600px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 450px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 280px;
+  }
+@media (max-width: 400px) {
+/* For a screen < 400px, this CSS will be read */
+.container {
+  width: 250px;
+}
+@media (max-width: 375px) {
+/* For a screen < 375px, this CSS will be read */
+.container {
+  width: 200px;
+}
+}
